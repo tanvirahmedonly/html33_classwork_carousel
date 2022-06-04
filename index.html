@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Quick">
+  <meta name="description" content="Personal portfolio">
+  <meta name="keywords" content="HTML, html tutorial, quick">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="7 days">
+  <meta name="author" content="Tanvir Ahmed">
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <title>Bootstrap carousel</title>
+</head>
+
+<body>
+
+  <!-- carousel start -->
+  <section class="btpslider">
+    <div class="container">
+      <div id="carouselone" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel"> <!-- In order to disable touch swiping on phone, use (data-bs-touch="false" data-bs-interval="false") instead of (data-bs-ride="carousel")-->
+        <!-- indicators start -->
+        <div class="carousel-indicators custom_carousel-indicators">
+          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="0" class="active carouselone" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="1" class="carouselone" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselone" data-bs-slide-to="2" class="carouselone" aria-label="Slide 3"></button>
+        </div>
+        <!-- indicators end -->
+        <!-- inner start -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="100000">
+            <img src="images/slider1.jpg" class="d-block w-100" alt="slider1">
+            <div class="carousel-caption d-none d-md-block text-white">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/slider2.jpg" class="d-block w-100" alt="slider2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="images/slider3.jpg" class="d-block w-100" alt="slider3">
+            <div class="carousel-caption d-none d-md-block text-white">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <!-- inner end -->
+        <!-- controls start -->
+        <button class="carousel-control-prev custom_carousel-control-prev" type="button" data-bs-target="#carouselone" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next custom_carousel-control-next" type="button" data-bs-target="#carouselone" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!-- controls end -->
+      </div>
+    </div>
+  </section>
+  <!-- carousel end -->
+
+  <!-- JS links -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
